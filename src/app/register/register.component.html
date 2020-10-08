@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="body">
+        <h1 class="title">
+            ลงทะเบียน
+        </h1>
+        <div>
+            <div class="profile">
+                <img src="{{userProfile.pictureUrl}}">
+            </div>
+            <div style="padding: 5px;" class="input-group mb-3 rounded">
+                <input type="text" class="form-control rounded-lg" placeholder="ชื่อ-นามสกุล" id="usr" name="username"
+                    [(ngModel)]="username">
+            </div>
+            <div style="padding: 5px;" class="input-group mb-3">
+                <input type="tel" class="form-control" placeholder="เบอร์โทร" [(ngModel)]="tel">
+            </div>
+            <div style="padding: 5px;" class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="อีเมล" [(ngModel)]="email">
+            </div>
+
+            <button class="btn btn-success" (click)="submit()">
+                ลงทะเบียน
+            </button>
+            <!-- <button class="btn btn-success" (click)="goNow()">
+                go now
+            </button> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
