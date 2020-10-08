@@ -40,6 +40,7 @@ export class RegisterComponent implements OnInit {
     } catch (err) {
       alert(err)
     }
+    ///
   }
   submit(){
     console.log(this.username);
